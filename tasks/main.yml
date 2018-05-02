@@ -2,10 +2,9 @@
 
 - name: NTP client | package
   tags:
-  - package
+    - package
   package:
     name: ntp
-    state: present
 
 - name: NTP client | config
   tags:
