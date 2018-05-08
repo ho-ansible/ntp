@@ -1,7 +1,7 @@
 ---
 - name: restart ntp
   tags:
-  - service
+    - service
   service:
     name: ntp
     state: restarted

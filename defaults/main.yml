@@ -1,0 +1,5 @@
+---
+ntp_subnet: 192.168.1.0
+ntp_mask: 255.255.255.0
+ntp_servers:
+  - pool.ntp.org

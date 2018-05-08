@@ -8,15 +8,15 @@
 
 - name: NTP client | config
   tags:
-  - config
-  copy:
-    src: ntp.conf
-    dest: /etc/
+    - config
+  template:
+    src: ntp.conf.j2
+    dest: /etc/ntp.conf
   notify: restart ntp
 
 - name: NTP client | service
   tags:
-  - service
+    - service
   service:
     name: ntp
     state: started

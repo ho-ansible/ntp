@@ -1,0 +1,12 @@
+## /etc/ntp.conf
+# NTP clock client configuration
+# {{ ansible_managed }}
+
+restrict default ignore
+restrict 127.0.0.1
+restrict [::1]
+restrict {{ ntp_subnet }} mask {{ ntp_mask }} nomodify nopeer notrap
+
+{% for svr in ntp_servers %}
+server {{ svr }}
+{% endfor %}
