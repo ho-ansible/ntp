@@ -8,20 +8,15 @@ Only tested on Debian stable, for now.
 + `ntp_subnet` / `ntp_mask`: subnet allowed to query
 + `ntp_servers` (default: pool.ntp.org): upstream servers
 
+## Playbooks
++ `main.yml`: apply role
++ `uninstall.yml`: remove. Run before removing config from inventory.
+
 ## Dependencies
 None.
 
-## Example Playbook
-
-```
-- hosts: ntp
-  roles:
-    - { role: ho-ansible.ntp }
-```
-
 ## License
-MIT
++ Ansible role licensed [MIT](LICENSE)
 
 ## Author Information
-Sean Ho, https://github.com/ho-ansible/
-
++ Ansible role by [Sean Ho](https://github.com/ho-ansible/)
