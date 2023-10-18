@@ -1,6 +1,9 @@
 # Ansible role: ntp
 Keeps system clock synchronized to a network time protocol server.
 
+## DEPRECATED
+This ansible role is no longer maintained.
+
 ## Requirements
 Only tested on Debian stable, for now.
 
